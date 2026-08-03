@@ -13,7 +13,7 @@
         background-color: rgb(252, 231, 138);
         display: flex;}
 
-    #title{text-align: center;
+    #headertitle{text-align: center;
         align-items: center;
         justify-content: center;
         flex:2;}
@@ -27,6 +27,10 @@
         width: 100%;}
     #profile h2{padding-left: 5px;}
     #profile h3{padding-left: 5px;}
+    #userid{height: 50%;
+        flex:1;}
+    #title{height: 50%;
+        flex:1;}    
 
     #settings{display: flex;
         justify-content: flex-end;
@@ -47,10 +51,10 @@
             <div id="profileicon">
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png">
             </div>
-            <h2>UserID</h2>
-            <h3>Rookie</h3>
+            <div id="userid"><h2>UserID</h2></div>
+            <div id="title"><h3>Rookie</h3></div>
         </div>
-        <div id="title">
+        <div id="headertitle">
             <h1>Stand Proud</h1>
         </div>
         <div id="settings">
@@ -64,8 +68,8 @@
     </div>
 
 <script>
-    const title= document.getElementById("title")
-    title.addEventListener("click", function(){title.style.backgroundColor="red"});
+    const headertitle= document.getElementById("title")
+    headertitle.addEventListener("click", function(){headertitle.style.backgroundColor="red"});
 </script>
 
 </body>
